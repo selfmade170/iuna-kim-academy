@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+  color: #ffffff;
+}
+
+/* Фон */
+.hero {
+  background: url('assets/bg.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Центральный блок */
+.overlay {
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  padding: 64px 48px;
+  text-align: center;
+  border-radius: 16px;
+  max-width: 760px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
+}
+
+/* Заголовок */
+h1 {
+  font-size: 3.6rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+/* Подзаголовок */
+p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+/* Кнопка */
+.start-btn {
+  padding: 18px 42px;
+  background-color: #ff9800; /* насыщённый оранжевый */
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+}
+
+.start-btn:hover {
+  background-color: #e38900;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+#audiences {
+  background-color: #f5f6f8;
+  padding: 100px 20px;
+  text-align: center;
+  color: #222;
+}
+
+.audience-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 48px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+#audiences h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+#audiences p {
+  font-size: 1.15rem;
+  color: #444;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.audience-btn {
+  background-color: #f0f0f0;
+  color: #222;
+  padding: 16px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.audience-btn:hover {
+  background-color: #ff9800;
+  color: #ffffff;
+  border-color: #ff9800;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 152, 0, 0.2);
+}
+
+.audience-btn:hover .icon {
+  color: #ffffff;
+}
+
+.icon {
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+/* Базовый стиль для страницы */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom right, #f2f5f9, #e9ecf3);
+  color: #333333;
+}
+
+/* HERO-БЛОК */
+.teacher-hero {
+  padding: 100px 20px 80px;
+  text-align: center;
+  background: linear-gradient(135deg, #eaf0f6, #f7f9fc);
+}
+
+/* Главный заголовок */
+.teacher-hero h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #222222;
+  margin-bottom: 24px;
+  letter-spacing: -0.5px;
+}
+
+/* Подзаголовок */
+.teacher-hero p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #444444;
+  margin-bottom: 36px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* Кнопка */
+.cta-button {
+  background-color: #f7941e;
+  color: white;
+  padding: 14px 32px;
+  font-size: 1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: #e9820a;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+.teacher-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  padding: 80px 5%;
+  background-color: #f8f9fb;
+}
+
+.grid-left, .grid-right {
+  flex: 1 1 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.course-benefits,
+.course-program {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.course-benefits:hover,
+.course-program:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.course-benefits h2,
+.course-program h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #f7941e;
+}
+
+.course-benefits ul,
+.course-program ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.course-benefits li,
+.course-program li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 14px;
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.course-benefits li::before,
+.course-program li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #f7941e;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+.course-for-accent {
+  background: #fff7e8; /* тёплый бледно-оранжевый */
+  padding: 40px 32px;
+  border-left: 6px solid #f7941e;
+  border-radius: 12px;
+  margin: 60px 5%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.course-for-accent h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #f7941e;
+  margin-bottom: 20px;
+}
+
+.course-for-accent ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.course-for-accent li {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  color: #444;
+  position: relative;
+  padding-left: 20px;
+}
+
+.course-for-accent li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #f7941e;
+  font-weight: bold;
+}
+.course-price-bonuses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 60px 5%;
+  justify-content: center;
+}
+
+.course-price,
+.course-bonuses {
+  flex: 1 1 380px;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Стоимость */
+.course-price {
+  background-color: #fff3e0;
+  border-left: 6px solid #f7941e;
+}
+
+.course-price h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #f7941e;
+  margin-bottom: 16px;
+}
+
+.price-tag {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #f7941e;
+}
+
+/* Бонусы */
+.course-bonuses {
+  background-color: #ffffff;
+  border-left: 6px solid #ccc;
+}
+
+.course-bonuses h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.course-bonuses ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.course-bonuses li {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  color: #444;
+  position: relative;
+  padding-left: 20px;
+}
+
+.course-bonuses li::before {
+  content: "➕";
+  position: absolute;
+  left: 0;
+  color: #888;
+  font-weight: bold;
+}
+.course-reviews {
+  padding: 60px 5%;
+  text-align: center;
+  background-color: #f8f9fb;
+}
+
+.course-reviews h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 32px;
+}
+
+.review-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.review-grid img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+.course-author {
+  padding: 80px 5%;
+  background-color: #fff;
+  color: #333;
+}
+
+.author-wrapper {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.author-photo {
+  width: 280px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.author-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.author-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+}
+.teacher-socials {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f8f9fb;
+}
+
+.teacher-socials h2 {
+  font-size: 1.8rem;
+  color: #222;
+  margin-bottom: 16px;
+}
+
+.teacher-socials p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 24px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.social-link.telegram {
+  background-color: #2aabee;
+}
+
+.social-link.tiktok {
+  background-color: #000000;
+}
+
+.social-link.instagram {
+  background-color: #e1306c;
+}
+
+.social-link:hover {
+  opacity: 0.85;
+}
+
+.coming-soon {
+  padding: 120px 20px;
+  text-align: center;
+  background: linear-gradient(to right, #eaf0f6, #f7f9fc);
+  color: #333;
+}
+
+.coming-wrapper h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+.coming-wrapper p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #444;
+}
+/* БАЗОВЫЕ СТИЛИ */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom right, #f2f5f9, #e9ecf3);
+  color: #333333;
+}
+
+/* HERO-СЕКЦИЯ */
+.teacher-hero {
+  padding: 100px 20px 80px;
+  text-align: center;
+  background: linear-gradient(135deg, #eaf0f6, #f7f9fc);
+}
+
+.teacher-hero h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #222222;
+  margin-bottom: 24px;
+  letter-spacing: -0.5px;
+}
+
+.teacher-hero p {
+  font-size: 1.25rem;
+  color: #444444;
+  margin-bottom: 32px;
+}
+
+/* КНОПКА CTA */
+.cta-button {
+  background-color: #f7941e;
+  color: white;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.cta-button:hover {
+  background-color: #e37a00;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* FREE LESSON BLOCK */
+.free-lesson {
+  background-color: #fffdf5;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.free-lesson-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.free-lesson h2 {
+  font-size: 1.8rem;
+  color: #f7941e;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.free-lesson p {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 24px;
+}
+.teacher-socials {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f8f9fb;
+}
+
+.teacher-socials h2 {
+  font-size: 1.8rem;
+  color: #222;
+  margin-bottom: 16px;
+}
+
+.teacher-socials p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 24px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.social-link.telegram {
+  background-color: #2aabee;
+}
+
+.social-link.tiktok {
+  background-color: #000000;
+}
+
+.social-link.instagram {
+  background-color: #e1306c;
+}
+
+.social-link:hover {
+  opacity: 0.85;
+}
